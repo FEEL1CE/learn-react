@@ -1,11 +1,7 @@
-const Header = props => {
+const Header = ({ value }) => {
   return (
     <nav>
-      <ul>
-        {props.list.map((item, index) => (
-          <li key={index}>{item}</li>
-        ))}
-      </ul>
+      <h1>{value}</h1>
     </nav>
   );
 };
